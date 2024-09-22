@@ -1,5 +1,38 @@
 # Welcome to your GPT Engineer project
 
+## nodejs update
+
+1. Download the Package:
+   Download the Node.js package from the following link:
+
+   [Node.js 18.18.2 Package - Anaconda](https://anaconda.org/conda-forge/nodejs/files?version=18.18.2)
+
+2. Put the Package in Your `pkgs` Folder:
+   Move the downloaded package file (`.tar.bz2` or `.conda` file) into the `pkgs` folder of your local Conda environment. For example, the `pkgs` folder is usually located at:
+
+   - Windows: `C:\Users\<YourUsername>\.conda\pkgs`
+   - macOS/Linux: `~/.conda/pkgs` or `~/anaconda3/pkgs`
+
+3. Execute the Following Command:
+   ```bash
+   conda update nodejs
+   ```
+
+   This command will attempt to update Node.js using the local package if it’s available in the `pkgs` folder.
+
+### Additional Instructions (Optional)
+If Conda doesn't find the package in the local directory, you might need to install it directly:
+
+```bash
+conda install /path/to/your/pkgs/nodejs-18.18.2-h57928b3_1.tar.bz2
+```
+
+Replace `/path/to/your/pkgs/` with the actual path to your `pkgs` folder.
+
+### Note
+- Ensure that all dependencies are available in your local environment, especially if you are working offline.
+- The `conda update nodejs` command typically checks for the package online first. If you're working offline, consider using the direct `conda install` command mentioned above.
+
 ## Project info
 
 **Project**: tldraw-local-dream
